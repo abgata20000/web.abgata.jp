@@ -1,0 +1,34 @@
+/* CSS Document */
+#contents{
+	width: 700px;
+}
+#contents h1{
+	text-align: center;
+	padding: 20px 20px 0px 0px;
+}
+#contents h2{
+	font-size: 1.4em;
+	letter-spacing: 0.2em;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e61e1e;
+}
+#contents h3{
+	font-size: 1.2em;
+	margin-bottom: 20px;
+	font-weight: bold;
+	margin-top: 50px;
+}
+#contents h4{
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+#contents p{
+	line-height: 180%;
+	margin-bottom: 30px;
+	margin-left: 5px;
+}
+#contents p.right{
+	text-align: right;
+}

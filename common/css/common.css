@@ -1,0 +1,127 @@
+@charset "utf-8";
+@import "html5reset-1.6.1.css";
+body {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "MS Pゴシック", "MS P Gothic", "Myriad Web", "Myriad Pro", Verdana, sans-serif;
+	color: #000000;
+	font-size: 12px;
+	letter-spacing: 0.1em;
+	-webkit-text-size-adjust:none;
+	background: url(../images/bg.jpg) repeat;
+	height: 100%;
+}
+html{
+height: 100%;
+}
+img{
+border-style: none;
+}
+br {
+letter-spacing: 0;
+}
+a{
+	color: #000000;
+	text-decoration: none;
+}
+a p{
+	color: #999999;
+	text-decoration: none;
+}
+a:hover,a:hover p{
+	color: #e61e1e;
+	text-decoration: none;
+}
+#wrapper{
+	width: 100%;
+    position: relative;
+    height:auto !important;
+    height: 100%;
+    min-height: 100%;
+}
+#header{
+	border-top: 10px solid #e61e1e;
+	border-bottom: 2px solid #e61e1e;
+}
+#header .inner{
+	width: 940px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+#header .logo{
+	float: left;
+}
+#gNavi{
+	float: right;
+	padding-top: 5px;
+	padding-right: 30px;
+}
+#gNavi li{
+	float: left;
+	margin-right: 45px;
+	height: 59px;
+}
+#gNavi li a{
+	display: block;
+	height: 45px;
+}
+#gNavi li a:hover, #gNavi li.on a{
+	background: url(../images/gnavi_arrow.gif) no-repeat center bottom;
+}
+#contents{
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-bottom:280px;
+}
+#footer{
+	background: url(../images/footer_illust.gif) repeat-x center top;
+	padding-top: 130px;
+	position:absolute;
+	bottom:0;
+	width: 100%;
+	left: 0px;
+}
+#footer .bottom{
+	color: #FFFFFF;
+	background: #e61e1e;
+	height: 50px;
+	clear: both;
+}
+#footer .bottom a{
+	color: #FFFFFF;
+}
+#footer .bottom a:hover{
+	text-decoration: underline;
+}
+#footer .bottom .inner{
+	width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 50px;
+}
+#footer p.copy{
+	float: left;
+	letter-spacing: normal;
+	font-size: 0.9em;
+}
+#footer p.link{
+	float: right;
+}
+.clearfix:after {
+ content: ".";
+ display: block;
+ height: 0;
+ clear: both;
+ visibility: hidden;
+}
+.clearfix {
+ display: inline-block;
+}
+* html .clearfix {
+ height: 1%;
+}
+.clearfix {
+ display: block;
+}

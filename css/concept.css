@@ -1,0 +1,18 @@
+/* CSS Document */
+#contents{
+	text-align: center;
+}
+h1{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#contents p{
+	font-size: 1.4em;
+	line-height: 250%;
+	width: 545px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	letter-spacing: 0.2em;
+	margin-bottom: 60px;
+}

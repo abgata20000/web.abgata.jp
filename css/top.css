@@ -1,0 +1,26 @@
+/* CSS Document */
+.container{
+	background: #FFFFFF;
+	padding: 12px;
+	-moz-box-shadow: 2px 2px 5px #c0c0c0;
+	-webkit-box-shadow: 2px 2px 5px #c0c0c0;
+	box-shadow: 2px 2px 5px #c0c0c0;
+	width: 280px;
+	float: left;
+	margin-right: 24px;
+	margin-bottom: 24px;
+}
+.container h2{
+	font-weight: bold;
+	padding: 20px 10px 15px;
+}
+.container .square{
+	color: #e61e1e;
+	font-size: 1.1em;
+	margin-right: 5px;
+}
+.container p{
+	line-height: 180%;
+	padding: 0px 10px 10px;
+	font-size: 0.9em;
+}

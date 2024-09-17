@@ -1,0 +1,27 @@
+/* CSS Document */
+#contents{
+	text-align: center;
+}
+h1{
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+#contents dl{
+	font-size: 1.4em;
+	margin-right: auto;
+	margin-left: auto;
+	width: 550px;
+}
+#contents dt{
+	float: left;
+	clear: both;
+	margin-bottom: 20px;
+	width: 130px;
+	padding-right: 20px;
+	line-height: 25px;
+}
+#contents dd{
+	float: left;
+	text-align: left;
+	line-height: 25px;
+}
