@@ -1,0 +1,146 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="事業概要"
+  description="エイビーの事業情報をご紹介します。"
+  currentPage="company"
+>
+  <section class="page-header">
+    <div class="container">
+      <h1 class="section-title">Company</h1>
+      <p class="page-lead">事業概要</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">事業情報</h2>
+      </div>
+      <div class="info-table-wrapper">
+        <dl class="info-table">
+          <div class="info-row">
+            <dt class="info-term">屋号</dt>
+            <dd class="info-desc">エイビー</dd>
+          </div>
+          <div class="info-row">
+            <dt class="info-term">設立</dt>
+            <dd class="info-desc">2017年5月</dd>
+          </div>
+          <div class="info-row">
+            <dt class="info-term">所在地</dt>
+            <dd class="info-desc">〒151-0072 東京都渋谷区幡ヶ谷3-39-12 渋谷ウエストビル1F</dd>
+          </div>
+          <div class="info-row">
+            <dt class="info-term">電話番号</dt>
+            <dd class="info-desc"><a href="tel:050-5830-3270">050-5830-3270</a></dd>
+          </div>
+          <div class="info-row">
+            <dt class="info-term">事業内容</dt>
+            <dd class="info-desc">
+              <ul class="service-list">
+                <li>WEB制作</li>
+                <li>システム・アプリ開発</li>
+                <li>モバイルアプリ開発 (iOS / Android)</li>
+                <li>システム運営・管理</li>
+                <li>完全個室インドアゴルフ施設運営</li>
+              </ul>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* --- 事業情報テーブル --- */
+  .info-table-wrapper {
+    max-width: 800px;
+    margin-inline: auto;
+  }
+
+  .info-table {
+    width: 100%;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-border);
+  }
+
+  .info-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .info-row:last-child {
+    border-bottom: none;
+  }
+
+  .info-row:nth-child(odd) {
+    background: var(--color-bg-page);
+  }
+
+  .info-row:nth-child(even) {
+    background: var(--color-gray-50);
+  }
+
+  .info-term {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: var(--text-sm);
+    color: var(--color-text-inverse);
+    background: var(--color-secondary);
+    padding: var(--space-4) var(--space-6);
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .info-desc {
+    padding: var(--space-4) var(--space-6);
+    color: var(--color-text-primary);
+    line-height: var(--leading-relaxed);
+  }
+
+  .info-desc a {
+    color: var(--color-primary);
+    font-weight: 600;
+  }
+
+  .service-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .service-list li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .service-list li::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: var(--radius-full);
+    background: var(--color-primary);
+    flex-shrink: 0;
+  }
+
+  @media (min-width: 640px) {
+    .info-row {
+      grid-template-columns: 160px 1fr;
+    }
+
+    .info-term {
+      border-right: 1px solid var(--color-border);
+    }
+  }
+
+</style>

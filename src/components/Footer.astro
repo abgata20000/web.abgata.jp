@@ -1,0 +1,166 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="footer-inner container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo" aria-label="エイビー トップページへ">
+          <svg class="footer-logo-svg" viewBox="0 0 90 43" role="img" aria-hidden="true" width="72" height="34">
+            <path fill-rule="evenodd" fill="#e61e1e" d="M0 0h36v43H26V26H10v17H0zm10 10h16v8H10zM54 0h36v43H54zm10 10h16v8H64zm0 16h16v8H64z"/>
+          </svg>
+          <span class="footer-brand-name">エイビー</span>
+        </a>
+        <p class="footer-tagline">Create Useful — 便利なものを創る</p>
+      </div>
+
+      <div class="footer-nav">
+        <h2 class="footer-heading">ページ</h2>
+        <ul class="footer-links" role="list">
+          <li><a href="/concept" class="footer-link">コンセプト</a></li>
+          <li><a href="/service" class="footer-link">サービス</a></li>
+          <li><a href="/company" class="footer-link">事業概要</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h2 class="footer-heading">お問い合わせ</h2>
+        <ul class="footer-links" role="list">
+          <li><a href="https://page.line.me/488adkec" class="footer-link" target="_blank" rel="noopener noreferrer">LINE公式アカウント</a></li>
+          <li><a href="/contact" class="footer-link">お問い合わせ</a></li>
+          <li><a href="/privacy" class="footer-link">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 街並みシルエット (旧サイトのfooter_illust.gifのオマージュ) -->
+    <div class="footer-skyline" aria-hidden="true">
+      <svg viewBox="0 0 1200 60" preserveAspectRatio="none" class="skyline-svg">
+        <path fill="rgba(0,0,0,0.04)" d="M0 60V35h40V20h15v15h25V25h10v10h30V15h15v20h20V10h10v25h25V30h20v5h15V20h10v15h30V5h15v30h25V20h10v15h20V25h15v10h30V15h10v20h25V28h15v7h20V18h10v17h30V10h15v25h20V22h15v13h25V30h10v5h30V20h15v15h20V8h10v27h25V25h15v10h30V18h10v17h20V30h15v5h25V22h15v13h20V15h10v20h30V28h15v7h25V20h10v15h20V10h15v25h30V18h10v17h20V25h15v10h25V30h10v5h30V22h10v13h45V35h15v25z"/>
+      </svg>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        &copy; {currentYear} エイビー All Rights Reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: var(--color-gray-100);
+    color: var(--color-text-secondary);
+    border-top: 3px solid var(--color-primary);
+    margin-top: var(--space-16);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .footer-inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  .footer-top {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+    padding: var(--space-12) 0 var(--space-8);
+  }
+
+  @media (min-width: 768px) {
+    .footer-top {
+      grid-template-columns: 2fr 1fr 1fr;
+    }
+  }
+
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    text-decoration: none;
+  }
+
+  .footer-logo-svg {
+    flex-shrink: 0;
+  }
+
+  .footer-brand-name {
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    color: var(--color-text-primary);
+  }
+
+  .footer-tagline {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+  }
+
+  .footer-heading {
+    font-family: var(--font-heading);
+    font-size: var(--text-sm);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-4);
+    letter-spacing: var(--tracking-wider);
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .footer-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--color-text-secondary);
+    font-size: var(--text-sm);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color var(--transition-fast);
+  }
+
+  .footer-link:hover {
+    color: var(--color-primary);
+  }
+
+  .footer-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+
+  .footer-skyline {
+    position: relative;
+    height: 60px;
+    margin-top: var(--space-4);
+  }
+
+  .skyline-svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer-bottom {
+    border-top: 1px solid var(--color-border);
+    padding: var(--space-6) 0;
+    text-align: center;
+  }
+
+  .footer-copy {
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+  }
+</style>

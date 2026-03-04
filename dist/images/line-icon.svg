@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="640" height="640">
+  <!-- 背景: 円形クリッピングを考慮して正方形全体をブランドレッドに -->
+  <rect width="640" height="640" fill="#e61e1e"/>
+  <!-- ABロゴを中央配置 (元のviewBox 90x43 → 円内に収まるよう適度にスケール) -->
+  <g transform="translate(131 255) scale(4.2)">
+    <path fill-rule="evenodd" fill="#ffffff" d="M0 0h36v43H26V26H10v17H0zm10 10h16v8H10zM54 0h36v43H54zm10 10h16v8H64zm0 16h16v8H64z"/>
+  </g>
+</svg>

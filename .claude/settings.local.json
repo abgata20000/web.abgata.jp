@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:docs.astro.build)",
+      "Bash(npm create astro@latest . -- --template minimal --no-install --no-git --typescript strict 2>&1)",
+      "Bash(npm install 2>&1)",
+      "Bash(npm run build 2>&1)",
+      "Bash(grep -l \"^<!DOCTYPE html>\" /Users/abgata200000-air/src/ab/www.abgata.jp/dist/*/index.html /Users/abgata200000-air/src/ab/www.abgata.jp/dist/index.html 2>/dev/null | wc -l)",
+      "Bash(grep -l '<html lang=\"ja\"' /Users/abgata200000-air/src/ab/www.abgata.jp/dist/*/index.html /Users/abgata200000-air/src/ab/www.abgata.jp/dist/index.html 2>/dev/null | wc -l)",
+      "Bash(grep -h 'id=\"' /Users/abgata200000-air/src/ab/www.abgata.jp/dist/*/index.html /Users/abgata200000-air/src/ab/www.abgata.jp/dist/index.html 2>/dev/null | sort | uniq -d)",
+      "Bash(grep 'href=\"/favicon.svg\"' /Users/abgata200000-air/src/ab/www.abgata.jp/dist/*/index.html /Users/abgata200000-air/src/ab/www.abgata.jp/dist/index.html 2>/dev/null | wc -l)",
+      "Bash(grep 'href=\"https://fonts.googleapis.com' /Users/abgata200000-air/src/ab/www.abgata.jp/dist/*/index.html /Users/abgata200000-air/src/ab/www.abgata.jp/dist/index.html 2>/dev/null | head -1)",
+      "Bash(grep -o '@media[^{]*min-width' /Users/abgata200000-air/src/ab/www.abgata.jp/src/styles/globals.css 2>/dev/null | head -5)",
+      "Bash(convert -background none -size 640x640 /Users/abgata200000-air/src/ab/www.abgata.jp/public/images/line-icon.svg /Users/abgata200000-air/src/ab/www.abgata.jp/public/images/line-icon.png 2>&1)",
+      "Bash(magick /Users/abgata200000-air/src/ab/www.abgata.jp/public/images/line-icon.svg -resize 640x640 /Users/abgata200000-air/src/ab/www.abgata.jp/public/images/line-icon.png 2>&1 && magick identify /Users/abgata200000-air/src/ab/www.abgata.jp/public/images/line-icon.png)"
+    ]
+  }
+}
