@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="2" fill="rgba(230,30,30,0.18)"/>
+    </pattern>
+  </defs>
+
+  <!-- 黒背景 + 赤ドット -->
+  <rect width="1200" height="630" fill="#171717"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- 右上赤ドット円 -->
+  <circle cx="1150" cy="80" r="220" fill="#e61e1e" opacity="0.35"/>
+  <!-- 左下シアンドット円 -->
+  <circle cx="80" cy="600" r="140" fill="#00e5ff" opacity="0.18"/>
+
+  <!-- 黄色ステッカー "AI 開発支援" (左上、微回転) -->
+  <g transform="translate(80, 110) rotate(-3)">
+    <rect x="0" y="0" width="280" height="72" fill="#ffe600" stroke="#000" stroke-width="5" rx="8"/>
+    <text x="140" y="50" fill="#000" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans CJK JP, sans-serif" font-size="36" font-weight="900" text-anchor="middle">AI 開発支援</text>
+  </g>
+
+  <!-- メインタイトル "Build with AI" (白 + 赤シャドウ) -->
+  <g transform="translate(80, 310)">
+    <text x="5" y="5" fill="#e61e1e" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans CJK JP, sans-serif" font-size="140" font-weight="900" letter-spacing="-3">Build with AI</text>
+    <text x="0" y="0" fill="#ffffff" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans CJK JP, sans-serif" font-size="140" font-weight="900" letter-spacing="-3">Build with AI</text>
+  </g>
+
+  <!-- サブコピー -->
+  <text x="80" y="410" fill="#ffffff" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans CJK JP, sans-serif" font-size="42" font-weight="700">業務を知る人が、自分で作れるように。</text>
+
+  <!-- エイビーロゴ (scale 1.4, 矩形の組み合わせ) + URL -->
+  <g transform="translate(80, 525) scale(1.4)">
+    <rect x="0" y="0" width="36" height="26" fill="#e61e1e"/>
+    <rect x="0" y="26" width="10" height="17" fill="#e61e1e"/>
+    <rect x="26" y="26" width="10" height="17" fill="#e61e1e"/>
+    <rect x="10" y="10" width="16" height="8" fill="#171717"/>
+    <rect x="54" y="0" width="36" height="43" fill="#e61e1e"/>
+    <rect x="64" y="10" width="16" height="8" fill="#171717"/>
+    <rect x="64" y="26" width="16" height="8" fill="#171717"/>
+  </g>
+  <text x="220" y="570" fill="#ffe600" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans CJK JP, sans-serif" font-size="36" font-weight="800" letter-spacing="1">abgata.jp / ai</text>
+
+  <!-- 擬音語 "ピコッ" (右上端に寄せる) -->
+  <text x="1010" y="230" fill="#ffe600" stroke="#000" stroke-width="3" paint-order="stroke fill" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans CJK JP, sans-serif" font-size="66" font-weight="900" transform="rotate(-8 1010 230)">ピコッ</text>
+
+  <!-- 擬音語 "ピロリン♪" (右下) -->
+  <text x="940" y="500" fill="#00e5ff" stroke="#000" stroke-width="3" paint-order="stroke fill" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans CJK JP, sans-serif" font-size="48" font-weight="900" transform="rotate(6 940 500)">ピロリン♪</text>
+</svg>

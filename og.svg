@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="2" fill="rgba(230,30,30,0.18)"/>
+    </pattern>
+  </defs>
+
+  <!-- 黒背景 + 赤ドット -->
+  <rect width="1200" height="630" fill="#171717"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- 右上の赤ドット円 -->
+  <circle cx="1150" cy="80" r="220" fill="#e61e1e" opacity="0.35"/>
+  <!-- 左下の青ドット円 -->
+  <circle cx="80" cy="600" r="140" fill="#3b82f6" opacity="0.18"/>
+
+  <!-- エイビーロゴ (scale 3, 矩形の組み合わせ) -->
+  <g transform="translate(80, 90) scale(3)">
+    <!-- 「A」: 上部ブロック (0-26の高さ) -->
+    <rect x="0" y="0" width="36" height="26" fill="#e61e1e"/>
+    <!-- 「A」: 左足 -->
+    <rect x="0" y="26" width="10" height="17" fill="#e61e1e"/>
+    <!-- 「A」: 右足 -->
+    <rect x="26" y="26" width="10" height="17" fill="#e61e1e"/>
+    <!-- 「A」: 上部の穴 -->
+    <rect x="10" y="10" width="16" height="8" fill="#171717"/>
+    <!-- 「B」: 外形 -->
+    <rect x="54" y="0" width="36" height="43" fill="#e61e1e"/>
+    <!-- 「B」: 上の穴 -->
+    <rect x="64" y="10" width="16" height="8" fill="#171717"/>
+    <!-- 「B」: 下の穴 -->
+    <rect x="64" y="26" width="16" height="8" fill="#171717"/>
+  </g>
+
+  <!-- "Create Useful" 大見出し (白 + 赤シャドウ) -->
+  <g transform="translate(80, 370)">
+    <text x="5" y="5" fill="#e61e1e" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans CJK JP, sans-serif" font-size="120" font-weight="900" letter-spacing="-3">Create Useful</text>
+    <text x="0" y="0" fill="#ffffff" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans CJK JP, sans-serif" font-size="120" font-weight="900" letter-spacing="-3">Create Useful</text>
+  </g>
+
+  <!-- サブコピー -->
+  <text x="80" y="450" fill="#ffffff" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans CJK JP, sans-serif" font-size="44" font-weight="700">— 便利なものを創る</text>
+
+  <!-- URL (黄色) -->
+  <text x="80" y="560" fill="#ffe600" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans CJK JP, sans-serif" font-size="36" font-weight="800" letter-spacing="1">abgata.jp</text>
+
+  <!-- 黄色ステッカー "エイビー" (右下、微回転) -->
+  <g transform="translate(980, 530) rotate(-4)">
+    <rect x="-130" y="-40" width="260" height="80" fill="#ffe600" stroke="#000" stroke-width="5" rx="8"/>
+    <text x="0" y="14" fill="#000" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans CJK JP, sans-serif" font-size="40" font-weight="900" text-anchor="middle">エイビー</text>
+  </g>
+
+  <!-- 擬音語 "カタカタッ" (右上、控えめ位置) -->
+  <text x="820" y="240" fill="#ffe600" stroke="#000" stroke-width="3" paint-order="stroke fill" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans CJK JP, sans-serif" font-size="56" font-weight="900" transform="rotate(-8 820 240)">カタカタッ</text>
+</svg>
